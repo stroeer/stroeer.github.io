@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>TOnlineMediaplayerFramework.New Demo</title>
+	<link rel="stylesheet" href="../assets/css/html-examples/style.css">
+</head>
+<body>
+	<script src="../assets/js/tonline-mediaplayer.js"></script>
+	<link rel="stylesheet" href="../assets/css/tonline-mediaplayer.css">
+
+	<h1>TOnlineMediaplayerFramework.New</h1>
+
+	<h2>HTML Markup not here, but can be dymanically generated via JS</h2>
+
+	<button id="createNewPlayerButton">Create new player</button>
+
+	<div id="websiteDemoContent">
+		<h2>This is some Content</h2>
+		<p>Some demo content</p>
+	</div>
+
+	<hr/>
+
+	<h2>HTML Markup is here, but not initialized by default</h2>
+	<p>This is due to the data-programmatic attribute</p>
+
+	<button id="initializePlayerButton">Initialize player</button>
+
+	<div id="notInitializedPlayerByDefault"
+		class="tonline-mediaplayer"
+		data-programmatic>
+		<div class="containment">
+			<video
+				playsinline
+				poster="../assets/images/html-examples/poster.jpg"
+				preload="metadata"
+				data-clicktarget="video">
+				<source
+					data-quality="1080"
+					data-label="1080p"
+					src="../assets/videos/html-examples/sample-video-1080p.mp4"
+					type="video/mp4">
+				<source
+					data-quality="720"
+					data-label="720p"
+					src="../assets/videos/html-examples/sample-video-720p.mp4"
+					type="video/mp4">
+				<source
+					data-quality="240"
+					data-label="240p"
+					src="../assets/videos/html-examples/sample-video-240p.mp4"
+					type="video/mp4">
+			</video>
+		</div>
+	</div>
+
+	<script src="CreatePosterImageDataURL.js"></script>
+	<script src="TOnlineMediaplayerFramework.New.js"></script>
+</body>
+</html>
